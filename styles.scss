@@ -1,0 +1,34 @@
+@import "bootstrap/scss/bootstrap";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sec {
+  background-color: greenyellow;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: left;
+}
+
+.sec > .art {
+  width: 200px;
+}
+
+.relative-wrapper {
+  width: 500px;
+  height: 500px;
+  background-color: paleturquoise;
+  position: relative;
+}
+
+.absolute-block {
+  width: 200px;
+  height: 200px;
+  background-color: azure;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: 50%;
+}
